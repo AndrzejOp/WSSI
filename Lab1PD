@@ -1,0 +1,49 @@
+Zad 1
+- klasyfikacja tekstu do kategorii tematycznych: często głębia tekstów literackich, nawet po wielu tłumaczeniach znawców nie jest prosta do zrozumienia, dlatego bez inteligencji od człowieka, nie będzie możliwe dokładne przyporządkowanie tekstu do kategorii tematycznej, ilość aspektów, którą trzeba rozważyć oraz ich połączenia sprawiają, że zdecydowanie wymaga to czegoś więcej niż wyklepanego schematu
+
+- odpowiadanie na proste pytania zadawane w języku naturalnym (np. polskim): pomimo, że pytania są proste, nie zawsze na proste pytania można odpowiedzieć tak lub nie, co oznacza, że nawet proste pytania wymagają minimum inteligencji od odpowiadjącego, poza tym, że pytanie jest względnie proste, nie znaczy, że opowiedź na nie będzie prosta dla każdego 
+
+- testowanie oprogramowania: oczywiście są serie i tysiące typowych testów, których wykonanie, nie wymaga szczególnej inteligencji, ale aby w chociaż w większej części być przekonany, że testowany obiekt rzeczywiście nie zawiedzie i został dokładnie sprawdzony, trzeba ruszyć głową i testować pod każdą możliwą perspektywą, zwłaszcza taką najbardziej nie prawdopodobną
+
+- komponowanie muzyki: aby komponować wymagana jest nie tylko wiedza muzyczna, ale także bogata wyobraźnia oraz inteligencja w rozumieniu artystycznym, bez odpowiedniej inteligencji w postaci kreatywności nie ma możliowści, aby powstało dzieło muzyczne, które rzeczywiście można nazwać skomponowanym, a nie powielonym
+
+
+- kierowanie samochodem: tak samo jak przy testowaniu, mimo że często większość rzeczy można zamknąć w prostym schemacie, nie jest to w pełni przewidywalna operacja, a to oznacza, że wymagana jest pewna doza inteligecji, która pozwoli rozwiązywać nowo napotkane sytuacje, których zaprogramowanie czy przedstawienie w schemacie nie jest możliwe
+
+
+Zad 2
+- streszczanie tekstu: streszczanie tekstu nie stanowi wyzwania nie do przejścia i w zbiorze kilku zasad można zawrzeć esencje tej operacji, a tym samym stworzenie narzędzia ai do tego nie powinno stanowić wyzwania  
+
+- tłumaczenie tekstu: z odpowiednio dużym słownikiem i dostępem do kilku blogów o slangu, jest możliwe, aby stworzyć zadowalające ai do tłumaczenia tekstu, który w najgorszym wypadku, nie będzie w stanie rozpoznać nazw własnych czy bardziej zakorzenionych tłumaczeń (zamiast odpowiednika kulturowego, dostaniemy dosłowne tłumaczenie)
+
+- rozwiązywanie układów równań: nauczenie ai nawet kilku, czy kilkunastu metod, rozwiązywania układów równań to raczej prostsze zadanie, a przy dodaniu odpowiednich wyznaczników, którą metode wybrać, w przyzwoitym czasie ai powinno nauczyć się rozwiązywać dowolnie złożone układy równań
+
+- układanie rozkładu jazdy: bardzo proste zadanie, głównym problemem jest złożoność zależności tj. jak ułożyć plan, aby autobusy sensownie po sobie przyjeżdżały i odjeżdżały, do czego idealnie nada się ai, ponieważ analiza tylu złożności nie powinna sprawiać ai żadnego problemu
+
+- rozwiązywanie układów równań liniowych, symboliczne obliczanie pochodnych, symboliczne całkowanie: pozwole sobie spiąć te podpunkty w jeden, ponieważ w kwestii matematyki zbiory zasad rozwiązywani problemów są skończone, a do tego nie raz nie duże, wszystko co da sie przedstawić wzorem, da się nauczyć ai moim zdaniem, a każdy element tego podpunktu ma własny zbiór reguł i wzorów, które można rozwiązać w ramach ai, po dodaniu odpowiednich kryteriów ai bez problemu nauczy się i będzie rozpoznawać takie struktury i niezależnie od trudności czy zbioru przestrzeni rozwiązań, będzie wstanie podać poprawny wynik lub chociaż taki, który będzie zadowalający 
+
+Zad 3
+- dyskusja naukowa: wszystko co nauka ma do zaoferowanie znajdziemy w internecie, do którego dostęp ma większość ludzi, a tym samym też ai, jeżeli ograniczymy ai dostęp do korzystania z jedynie sprawdzonych źródeł, będzie ono wstanie prowadzić dyskusje na poziomie akademickim, jednka może okazać się, że posiadania przez ai wiedza nie pozwoli na tworzenie nowych teorii naukowych, a jedynie dyskusje na temat tego co już wiemy, albo wiemy w wiekszości, nie pozwoli to na dyskusje o tym co wiemy, że nie wiemy, ani tym bardziej na dyskusje w sferze nie wiemy, że nie wiemy
+
+- odpowiadanie na pytania klientów w internetowej infolinii: w znacznej wiekszości pytania klientów są powtarzalne, bardzo rzadka zdarzają się pytania, na które wyszkolone zgromadzoną od tylu lat bazą pytań, ai nie da rady odpowiedzieć, jeżeli tak się stanie to wystarczy, że klient poprosi o rozmowę z człowiekiem specjalistą lub uda się po pomoc samodzielnie do usługodawcy/producenta
+
+- odpowiadanie na pytania klientów w telefonicznej infolinii: tak samo jak powyżej, większość pytań, które można zadać na takiej infolini zostało już zadanych, istnieją już także odpowiednie narzędzia do rozpoznawania mowy, a także istnieje już wiele firm, które stosuje takie rozwiązanie w celu poszukiwania nowych klientów, a także wielu oszustów, aby na podstawie rozmowy i kilku naszych słów stworzyć profil naszego głosu, który pózniej mogą wykorzystać do oszukiwania innych
+
+Zad 4
+
+ 1. Bot asystent nigdy nie wprowadzi Cię w błąd, jego odpowiedzi są bardzo schematyczne, jako bot pomocniczy, będzie wyrażać jedynie fakty, nie będzie wstanie udawać empatii czy nie będzie w stanie udzielić Ci rady
+
+3. 
+a) opowiadanie żartów - bot pomocnik nie rozumie żartów, zignoruje je albo spróbuje wrócić do głównego wątku, drugi rodzaj może udawać, że zrozumiał żart, zaśmiać się albo opowiedzieć własny
+b) przytaczanie cytatów z twoich wypowiedzi, lub znanych osób - oba boty nie mają pamięci, więc żeby odwołać się do poprzednich wypowiedzi trzeba je powtórzyć w aktualnej wiadmości 
+c) nawiązywanie wypowiedzi do słów kluczowych - boty nie pamiętają często słów kluczowych, chociaż lepiej radzi sobie z tym bot pomocnik, niż ten nastawiony na test Touringa, który łatwo gubi wątek i brakuje mu pamiętania wypowiedzi
+d) zadawanie dużej liczby pytań - oba boty będą udzielać odpowiedzi, jest sznasa, że bot nastawiony na przejście testu Touringa, będzie próbował zmienić temat
+e) powracanie do początku wypowiedzi, sekwencyjne powtarzanie - powtarzanie się wywołuje różne odpowiedzi u obu botów, jednak coś na wzór zniecierpliwienia może okazać jedynie bot nastawiony na test
+f) zadawanie pytań powstających z twoich wypowiedzi - oba boty nie mają pamięci, więc nie będą wnioskować z twoich wypowiedzi, a jedynie z tego co sami napisali, będą za to pytać o dodatkowe rzeczy, które mogą zrobić, zależnie czy tego chcesz
+g) odpowiadanie wymijająco, ogólnikowo - bot pomocnik, będzie próbował dopytać Cię o szczegóły, aby lepiej zdefiniować problem, drugi rodzaj zignoruje to, albo napomni, że nie jesteś szczegółowy
+h) częsta zmiana tematu rozmowy - bot pomocnik nie bierze tego pod uwagę, ignoruje to i odpowiada na kolejne wątki, bardzo podobnie bot nastwaiony na test Touring, ale zdarzyć się może, że coś na wzór zniecierpliwienia może okazać 
+i) problemy z utrzymaniem wątków - bot nastawiony na test Touring łatwiej gubi wątek i główny sens, bot pomocnik lepiej trzyma się jednego tematu
+
+5. Bot jest wstanie napisać coś nie miłego, ale nie znaczy to, że udało się mi go zdenerwować 
+
+
