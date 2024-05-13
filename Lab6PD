@@ -20,11 +20,37 @@ class DecisionTree:
         self.n_features = n_features
         self.root = None
 
-    def fit(self, X, y):
-        pass
+    def fit(self, X, y): #funkcja do uruchomienia budowy drzewa
+      self.n_classes = len(np.unique(y)) 
+      self.n_features = X.shape[1] if not self.n_features else min(self.n_features, X.shape[1])
+      self.root = self._grow_tree(X, y) #wywołanie funkcji do budowania drzewa
 
-    def _grow_tree(self, X, y, depth=0):
-        pass
+    def _grow_tree(self, X, y, depth=0): #funkcja do budowania drzewa 
+      n_samples, n_features = X.shape 
+      n_labels = len(np.unique(y))
+
+      if (depth >= self.max_depth or n_labels == 1 or n_samples < self.min_samples_split):
+          leaf_value = self._most_common_label(y)
+          return Node(value=leaf_value)
+
+      feat_idxs = np.random.choice(n_features, self.n_features, replace=False)
+
+      best_feat, best_thresh = self._best_split(X, y, feat_idxs)
+
+      if best_feat is None:
+          return Node(value=self._most_common_label(y)) #przydatne tutaj
+
+      left_idxs, right_idxs = self._split(X[:, best_feat], best_thresh)
+
+      left = self._grow_tree(X[left_idxs, :], y[left_idxs], depth + 1)
+      right = self._grow_tree(X[right_idxs, :], y[right_idxs], depth + 1)
+
+      return Node(best_feat, best_thresh, left, right)
+
+    def _most_common_label(self, y): #dodatkowa funkcja do zliczania najbardziej licznej etykiety
+      counter = Counter(y) 
+      most_common = counter.most_common(1)[0][0]
+      return most_common
 
     def _best_split(self, X, y, feat_idxs):
       best_gain = -1
@@ -40,8 +66,8 @@ class DecisionTree:
                 best_thresh = threshold
     return best_feat, best_thresh
 
-    def _information_gain(self, y, X_column, threshold):
-        parent_entropy = self._entropy(y)    #liczymy zysk informayjny, zaczynając od zysku parenta, przechodząc do child i na koniec odejmujemy, żeby dostać zysk
+    def _information_gain(self, y, X_column, threshold): #liczymy zysk informayjny, zaczynając od zysku parenta, przechodząc do child i na koniec odejmujemy, żeby dostać zysk
+        parent_entropy = self._entropy(y)    
         left_idxs, right_idxs = self._split(X_column, threshold)
 
         if len(left_idxs) == 0 or len(right_idxs) == 0:
@@ -56,13 +82,13 @@ class DecisionTree:
 
         return parent_entropy - child_entropy
 
-    def _split(self, X_column, split_threshold):
-        left_idxs = np.argwhere(X_column <= split_threshold).flatten() #funkcja do zbudowania nowego węzła na podstawie znalezionej cechy
+    def _split(self, X_column, split_threshold): #funkcja do zbudowania nowego węzła na podstawie znalezionej cechy
+        left_idxs = np.argwhere(X_column <= split_threshold).flatten() 
         right_idxs = np.argwhere(X_column > split_threshold).flatten()
         return left_idxs, right_idxs
 
-    def _entropy(self, y):
-        hist = np.bincount(y) #liczenie wartości entropii
+    def _entropy(self, y): #liczenie wartości entropii
+        hist = np.bincount(y) 
         ps = hist / len(y)
         return -np.sum([p * np.log(p) for p in ps if p > 0])
 
